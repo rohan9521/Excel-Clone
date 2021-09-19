@@ -1,0 +1,36 @@
+.container{
+    height: 100vh;
+}
+div.title{
+    height: 5vh;
+    display: flex;
+    background-color: green;
+    align-items: center;
+    justify-content: center
+}
+.menu-bar{
+    height: 5vh;
+    flex-direction: row;
+    display: flex;
+    background-color: green;
+    vertical-align: middle  
+}
+.menu-bar-item{
+    margin-left: 2px;
+    margin-right: 3px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: green;
+}
+.options{
+    height: 5vh;
+    background-color: rgb(135, 170, 158);
+
+}
+.options-item{
+    margin: 2px;
+}
+.formula-bar{}
