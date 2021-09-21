@@ -1,5 +1,6 @@
 .container{
     height: 100vh;
+    padding: 0%;
 }
 div.title{
     height: 5vh;
@@ -13,7 +14,9 @@ div.title{
     flex-direction: row;
     display: flex;
     background-color: green;
-    vertical-align: middle  
+    vertical-align: middle;
+    height: fit-content;
+    padding: 2px;
 }
 .menu-bar-item{
     margin-left: 2px;
@@ -28,9 +31,34 @@ div.title{
 .options{
     height: 5vh;
     background-color: rgb(135, 170, 158);
-
+    height: fit-content;
+    padding: 2px;
 }
 .options-item{
     margin: 2px;
 }
-.formula-bar{}
+.formula-bar{
+    height: 5vh;
+    background-color: rgb(34, 214, 151);
+    height: fit-content;
+    padding: 2px;
+}
+.row-id-bar{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+.column-id-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+.column-id-cell{
+    margin: 5px;
+}
+.sheet{
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    background-color: blue;
+}
