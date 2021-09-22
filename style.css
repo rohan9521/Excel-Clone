@@ -1,64 +1,154 @@
-.container{
-    height: 100vh;
-    padding: 0%;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-size: large;
 }
-div.title{
-    height: 5vh;
+
+.container {
+    height: 100%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.title {
+    height: 4%;
     display: flex;
+    flex-direction: row;
     background-color: green;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    color: azure;
 }
-.menu-bar{
-    height: 5vh;
-    flex-direction: row;
+
+.menu-bar {
     display: flex;
+    height: 3%;
     background-color: green;
-    vertical-align: middle;
-    height: fit-content;
-    padding: 2px;
+    align-items: center;
+    color: azure;
 }
-.menu-bar-item{
-    margin-left: 2px;
-    margin-right: 3px;
-    color: aliceblue;
+
+.menu-bar-item {
+    margin-left: 1%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    background: green;
 }
-.options{
-    height: 5vh;
-    background-color: rgb(135, 170, 158);
-    height: fit-content;
-    padding: 2px;
+
+.options {
+    display: flex;
+    height: 4%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
 }
-.options-item{
-    margin: 2px;
+
+.options-item {
+    margin-left: 1%;
+    height: 60%;
+    display: flex;
 }
-.formula-bar{
-    height: 5vh;
-    background-color: rgb(34, 214, 151);
-    height: fit-content;
-    padding: 2px;
+
+.options-item-drop-down {
+    margin-left: 1%;
+    height: 60%;
+    display: flex;
+    width: 5%;
 }
-.row-id-bar{
+
+.formula-bar {
+    height: 3%;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    align-items: center;
+}
+
+.formula-bar-field {
+    margin-left: 10px;
+    height: 80%;
+    display: flex;
+    width: 15%;
+}
+
+.formula-bar-field-2 {
+    height: 80%;
+    display: flex;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.fx {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sheet {
+    background-color: blue;
+    height: 84%;
+    padding: 0;
+    display: flex;
+}
+
+
+/* .row-id-cell-header {
+    height: 5%;
+    padding: 0;
+    margin: 0;
+    border-color:
+} */
+
+.row-id-bar {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: rgb(55, 121, 188);
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width: 2%;
 }
-.column-id-bar{
-    display: flex;
+
+
+/* .row-id-cell {
+    font-size: medium;
+    border-style: solid;
+    padding: 10px;
+    margin: 0;
+    border-width: 1px;
+    border-color: azure;
+    height: 5%;
+    width: fit-content;
+} */
+
+.column-id-bar {
     flex-direction: row;
-    background-color: black;
+    background-color: rgb(173, 146, 146);
+    height: 5%;
+    padding: 0;
+    margin-bottom: 0;
+    width: 100%;
 }
-.column-id-cell{
-    margin: 5px;
-}
-.sheet{
-    display: flex;
-    flex-direction: row;
-    margin: 0%;
-    background-color: blue;
+
+
+/* .column-id-cell {
+    box-sizing: border-box;
+    font-size: medium;
+    border-style: solid;
+    padding: 6px;
+    margin: 0;
+    border-width: 1px;
+    border-color: azure;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+} */
+
+.foot-bar {
+    border: 1px solid black;
+    background: blueviolet;
+    height: 3%;
 }
