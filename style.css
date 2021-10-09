@@ -1,119 +1,112 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
-    font-size: large;
-}
-
-.container {
-    height: 100%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-div.title {
-    height: 4%;
-    display: flex;
-    flex-direction: row;
-    background-color: green;
-    align-items: center;
-    justify-content: center;
-    color: azure;
-}
-
-.menu-bar {
-    display: flex;
-    height: 3%;
-    background-color: green;
-    align-items: center;
-    color: azure;
-}
-
-.menu-bar-item {
-    margin-left: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.options {
-    display: flex;
-    height: 4%;
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-}
-
-.options-item {
-    margin-left: 1%;
-    height: 60%;
-    display: flex;
-}
-
-.options-item-drop-down {
-    margin-left: 1%;
-    height: 60%;
-    display: flex;
-    width: 5%;
-}
-
-.formula-bar {
-    height: 3%;
-    background-color: rgb(237, 237, 237);
-    display: flex;
-    align-items: center;
-}
-
-.formula-bar-field {
-    margin-left: 10px;
-    height: 80%;
-    display: flex;
-    width: 15%;
-}
-
-.formula-bar-field-2 {
-    height: 80%;
-    display: flex;
-    width: 100%;
-    margin-right: 10px;
-}
-
-.fx {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.sheet {
-    background-color: blue;
-    height: 84%;
-    padding: 0;
-    display: flex;
-}
-
-
-/* .row-id-cell-header {
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-size: large;
+        }
+        
+        .container {
+            height: 100%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        div.title {
+            height: 4%;
+            display: flex;
+            flex-direction: row;
+            background-color: green;
+            align-items: center;
+            justify-content: center;
+            color: azure;
+        }
+        
+        .menu-bar {
+            display: flex;
+            height: 3%;
+            background-color: green;
+            align-items: center;
+            color: azure;
+        }
+        
+        .menu-bar-item {
+            margin-left: 1%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .options {
+            display: flex;
+            height: 4%;
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+        }
+        
+        .options-item {
+            margin-left: 1%;
+            height: 60%;
+            display: flex;
+        }
+        
+        .options-item-drop-down {
+            margin-left: 1%;
+            height: 60%;
+            display: flex;
+            width: 5%;
+        }
+        
+        .formula-bar {
+            height: 3%;
+            background-color: rgb(237, 237, 237);
+            display: flex;
+            align-items: center;
+        }
+        
+        .formula-bar-field {
+            margin-left: 10px;
+            height: 80%;
+            display: flex;
+            width: 15%;
+        }
+        
+        .formula-bar-field-2 {
+            height: 80%;
+            display: flex;
+            width: 100%;
+            margin-right: 10px;
+        }
+        
+        .fx {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .sheet {
+            background-color: blue;
+            height: 84vh;
+            flex-grow: 1;
+            display: flex;
+            flex-basis: 100px;
+        }
+        /* .row-id-cell-header {
     height: 5%;
     padding: 0;
     margin: 0;
     border-color:
 } */
-
-.row-id-bar {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(55, 121, 188);
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-    width: 2%;
-}
-
-
-/* .row-id-cell {
+        
+        .row-id-bar {
+            background-color: aquamarine;
+            height: calc(84vh-30px);
+            border: 1px solid red;
+            width: 30px;
+        }
+        /* .row-id-cell {
     font-size: medium;
     border-style: solid;
     padding: 10px;
@@ -123,18 +116,27 @@ div.title {
     height: 5%;
     width: fit-content;
 } */
-
-.column-id-bar {
-    flex-direction: row;
-    background-color: rgb(173, 146, 146);
-    height: 5%;
-    padding: 0;
-    margin-bottom: 0;
-    width: 100%;
-}
-
-
-/* .column-id-cell {
+        
+        .select-all {
+            display: flex;
+            height: 30px;
+            width: 30px;
+            background-color: aqua;
+        }
+        
+        .column-id-bar {
+            background-color: rgb(231, 223, 223);
+            height: 30px;
+            width: calc(100vw-30px);
+        }
+        
+        .input-cell-container {
+            background-color: rgb(207, 27, 168);
+            height: calc(84vw-30px);
+            border: 1px solid rgb(232, 232, 232);
+            width: calc(100%-30px);
+        }
+        /* .column-id-cell {
     box-sizing: border-box;
     font-size: medium;
     border-style: solid;
@@ -146,9 +148,45 @@ div.title {
     width: 100%;
     align-items: center;
 } */
-
-.foot-bar {
-    border: 1px solid black;
-    background: blueviolet;
-    height: 3%;
-}
+        
+        .foot-bar {
+            height: fit-content;
+            display: flex;
+            align-items: center;
+        }
+        
+        .icon-left-scroll,
+        .icon-right-scroll {
+            font-size: 30px;
+            margin-left: 10px;
+        }
+        
+        .icon-left-scroll:hover,
+        .icon-right-scroll:hover {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+        
+        .icon-add:hover {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+        
+        .icon-add {
+            color: rgb(25, 152, 25);
+            margin-left: 10px;
+        }
+        
+        .sheet-tab {
+            border-bottom: 4px green solid;
+            margin-left: 10px;
+            border-left: 1px solid;
+            border-top: 1px solid;
+            border-right: 1px solid;
+            font-weight: bold;
+        }
+        
+        .sheet-tab-container {
+            width: 100%;
+            padding: 1px;
+        }
