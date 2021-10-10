@@ -26,7 +26,7 @@ $(document).ready(function() {
             let colCode = $(`.col-id-${j}`).attr("id").split("-")[1]
             let inputCell = $(`<div class="input-cell" contenteditable="true" id="rowid-${i}-colid-${j}" data="${colCode}"></div>`)
             inputCell.click(function() {
-                $(`.formula-bar-field`).val(inputCell.attr("id"))
+                $(`.formula-bar-field`).text(inputCell.attr("id"))
             })
             cellRow.append(inputCell)
         }
