@@ -16,7 +16,7 @@
         }
         
         div.title {
-            height: 4%;
+            height: 4vh;
             display: flex;
             flex-direction: row;
             background-color: green;
@@ -27,7 +27,7 @@
         
         .menu-bar {
             display: flex;
-            height: 3%;
+            height: 3vh;
             background-color: green;
             align-items: center;
             color: azure;
@@ -42,7 +42,7 @@
         
         .options {
             display: flex;
-            height: 4%;
+            height: 4vh;
             background-color: rgb(255, 255, 255);
             align-items: center;
         }
@@ -61,7 +61,7 @@
         }
         
         .formula-bar {
-            height: 3%;
+            height: 3vh;
             background-color: rgb(237, 237, 237);
             display: flex;
             align-items: center;
@@ -87,8 +87,9 @@
         }
         
         .sheet {
-            height: 84vh;
+            height: 83vh;
             display: flex;
+            width: 100vw;
             flex-wrap: wrap;
         }
         /* .row-id-cell-header {
@@ -99,10 +100,9 @@
 } */
         
         .row-id-bar {
-            background-color: aquamarine;
-            height: 80%;
-            border: 1px solid red;
-            width: 30px;
+            height: 81vh;
+            border: 1px solid rgb(13, 12, 12);
+            width: 1vw;
         }
         /* .row-id-cell {
     font-size: medium;
@@ -117,22 +117,24 @@
         
         .select-all {
             display: flex;
-            height: 30px;
-            width: 30px;
-            background-color: aqua;
+            height: 2vh;
+            width: 1vw;
+            border-left: 1px solid rgb(8, 8, 8);
+            border-top: 1px solid rgb(8, 8, 8);
         }
         
         .column-id-bar {
-            background-color: rgb(231, 223, 223);
-            height: 30px;
-            width: 59%;
+            border: 1px solid rgb(8, 8, 8);
+            height: 2vh;
+            width: 99vw;
+            align-self: center;
         }
         
         .input-cell-container {
-            background-color: rgb(207, 27, 168);
-            height: calc(84vw-30px);
-            border: 1px solid rgb(232, 232, 232);
-            width: calc(100%-30px);
+            height: 81vh;
+            border-right: 1px solid rgb(8, 8, 8);
+            border-bottom: 1px solid rgb(8, 8, 8);
+            width: 99vw;
         }
         /* .column-id-cell {
     box-sizing: border-box;
@@ -148,7 +150,7 @@
 } */
         
         .foot-bar {
-            height: fit-content;
+            height: 3vh;
             display: flex;
             align-items: center;
         }
