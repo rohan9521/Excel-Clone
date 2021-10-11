@@ -33,5 +33,11 @@ $(document).ready(function() {
         $(`.input-cell-container`).append(cellRow)
     }
 
+    $(`.menu-bar-item`).click(function(){
+        $(`.selected-menu.selected-menu`).removeClass("selected-menu")
+        $(this).addClass('selected-menu')
+        console.log("clicked")
+    })
+
     console.log(ans)
 })

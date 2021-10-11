@@ -6,7 +6,7 @@
         }
         
         .container {
-            height: 100%;
+            height: 100vh;
             padding: 0%;
             box-sizing: border-box;
         }
@@ -27,7 +27,7 @@
         
         .menu-bar {
             display: flex;
-            height: 3vh;
+            height: 4vh;
             background-color: green;
             align-items: center;
             color: azure;
@@ -42,7 +42,7 @@
         
         .options {
             display: flex;
-            height: 4vh;
+            height: 5vh;
             background-color: rgb(255, 255, 255);
             align-items: center;
         }
@@ -61,7 +61,7 @@
         }
         
         .formula-bar {
-            height: 3vh;
+            height: 5vh;
             background-color: rgb(237, 237, 237);
             display: flex;
             align-items: center;
@@ -89,10 +89,12 @@
         }
         
         .sheet {
-            height: 83vh;
+            height: 77vh;
             display: flex;
             width: 100vw;
             flex-wrap: wrap;
+            overflow: scroll;
+
         }
         /* .row-id-cell-header {
     height: 5%;
@@ -102,10 +104,11 @@
 } */
         
         .row-id-bar {
-            height: 81vh;
-            border: 1px solid rgb(130, 125, 125);
-            width: 1vw;
-            overflow: hidden;
+            
+            border-right: 1px solid rgb(130, 125, 125);
+            border-left: 1px solid rgb(130, 125, 125);
+            border-bottom: 1px solid rgb(130, 125, 125);
+            width: 30px;
         }
         
         .row-id-bar-item {
@@ -113,40 +116,51 @@
             align-items: center;
             border-bottom: 1px solid rgb(130, 125, 125);
             justify-content: center;
-            min-height: 2vh;
+            min-height: 30px;
         }
         
         .select-all {
             display: flex;
-            height: 2vh;
-            width: 0.96vw;
-            border-left: 1px solid rgb(130, 125, 125);
+            height: 30px;
+            width: 30px    ;
+            border-right: 1px solid rgb(130, 125, 125);
             border-top: 1px solid rgb(130, 125, 125);
+
+            border-bottom: 1px solid rgb(130, 125, 125);
         }
         
         .column-id-bar {
-            border: 1px solid rgb(130, 125, 125);
-            height: 2vh;
-            width: 99vw;
+            border-right: 1px solid rgb(130, 125, 125);
+            border-top: 1px solid rgb(130, 125, 125);
+            border-bottom: 1px solid rgb(130, 125, 125);
+            height: 30px;
+            width: 100vw-30px;
             display: flex;
             overflow: hidden;
+        }
+        .column-bar{
+            display: flex
+            
+        }
+        .row-bar{
+            display: flex
         }
         
         .column-id-bar-item {
             min-width: 100px;
             display: flex;
             align-items: center;
-            height: 2.1vh;
+            height:30px;
             justify-content: center;
             border-right: 1px solid;
         }
         
         .input-cell-container {
-            height: 81vh;
+            height: calc(75%-30px);
             border-right: 1px solid rgb(130, 125, 125);
             border-bottom: 1px solid rgb(130, 125, 125);
-            width: 99vw;
-            overflow: hidden;
+            width: 100vw;
+            
         }
         
         .cell-row {
@@ -158,12 +172,13 @@
             border-right: 1px solid rgb(130, 125, 125);
             border-bottom: 1px solid rgb(130, 125, 125);
             min-width: 100px;
-            min-height: 2vh;
+            min-height: 30px;
         }
         
         .foot-bar {
-            height: 3vh;
+            height: 5vh;
             display: flex;
+            border: 1px solid black;
             align-items: center;
         }
         
@@ -203,4 +218,7 @@
             padding: 1px;
         }
         
-        .
+        .selected-menu{
+            background-color: azure;
+            color: black
+        }
