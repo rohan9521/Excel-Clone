@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    
 </head>
 
 <body>
@@ -25,9 +26,9 @@
             <div class="menu-bar-item">View</div>
         </div>
         <div class="options">
-            <img class="options-item" src="/Users/raja.ray/Documents/Excel-Clone/Assests/copy-icon.png" />
-            <img class=" options-item" src="/Users/raja.ray/Documents/Excel-Clone/Assests/cut-icon.jpeg" />
-            <img class="options-item" src="/Users/raja.ray/Documents/Excel-Clone/Assests/paste-icon.jpeg" />
+            <div class="options-item material-icons" >content_cut</div>
+            <div class="options-item material-icons" >content_copy</div>
+            <div class="options-item material-icons" >content_paster</div>
             <select class="options-item-drop-down">
                 <option value="Verdana" style="font-family:'Courier New', Courier, monospace">Verdana</option>
                 <option value="Arial" style="font-family:Arial">Arial</option>
@@ -45,14 +46,14 @@
                 <option value="24">24</option>
                 <option value="26">26</option>
             </select>
-            <div class="options-item material-icons selected">format_bold</div>
-            <div class="options-item material-icons selected">format_underlined</div>
-            <div class="options-item material-icons selected">format_italic</div>
-            <div class="options-item material-icons selected">format_align_left</div>
-            <div class="options-item material-icons">format_align_center</div>
-            <div class="options-item material-icons">format_align_right</div>
-            <div class="options-item material-icons">format_color_fill</div>
-            <div class="options-item material-icons">format_color_text</div>
+            <div class="options-item material-icons selected" id="bold">format_bold</div>
+            <div class="options-item material-icons selected" id="undelined">format_underlined</div>
+            <div class="options-item material-icons selected" id="italic">format_italic</div>
+            <div class="options-item material-icons selected" id="alignL">format_align_left</div>
+            <div class="options-item material-icons" id="alignC">format_align_center</div>
+            <div class="options-item material-icons" id="alignR">format_align_right</div>
+            <div class="options-item material-icons" id="colorill">format_color_fill</div>
+            <div class="options-item material-icons" id="colorText">format_color_text</div>
         </div>
         <div class="formula-bar ">
             <div class="formula-bar-field"> </div>

@@ -38,6 +38,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        
+        }
+        .menu-bar-item:hover{
+            cursor: pointer;
         }
         
         .options {
@@ -52,9 +56,12 @@
             height: 60%;
             display: flex;
         }
+        .options-item:hover{
+            cursor: pointer;
+        }
         
         .options-item-drop-down {
-            margin-left: 1%;
+           
             height: 60%;
             display: flex;
             width: 5%;
@@ -173,6 +180,9 @@
             border-bottom: 1px solid rgb(130, 125, 125);
             min-width: 100px;
             min-height: 30px;
+        }
+        .cell-select{
+            
         }
         
         .foot-bar {

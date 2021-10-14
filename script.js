@@ -1,4 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
+    let cellProp =[]
+   
+   
     let cellContainer = $(".input-cell-container")
     for (i = 1; i <= 100; i++) {
         let n = i
@@ -22,22 +25,49 @@ $(document).ready(function() {
 
     for (i = 1; i <= 100; i++) {
         let cellRow = $(`<div class="cell-row">`)
+        let temp=[]
         for (j = 1; j <= 100; j++) {
-            let colCode = $(`.col-id-${j}`).attr("id").split("-")[1]
-            let inputCell = $(`<div class="input-cell" contenteditable="true" id="rowid-${i}-colid-${j}" data="${colCode}"></div>`)
-            inputCell.click(function() {
-                $(`.formula-bar-field`).text(inputCell.attr("id"))
+            let colCode = $(`.col-id-${j}`).attr("id").split("-")[1] + i
+            let inputCell = $(`<div class="input-cell" contenteditable="true" id="${i}-${j}" data="${colCode}"></div>`)
+            
+            inputCell.click(function () {
+                $(`.formula-bar-field`).text(inputCell.attr("data"))
+                $(`cell-select`).removeClass("cell-select")
+                $(this).addClass("cell-select")
+               
             })
+
+            
             cellRow.append(inputCell)
+
+            temp[j]={
+                bold:false,
+                italics:false,
+                align:"L",
+                textColor:"black",
+                backgroundColor:"white"
+            }
+
         }
+        cellProp[i]=temp
         $(`.input-cell-container`).append(cellRow)
     }
 
-    $(`.menu-bar-item`).click(function(){
+    $(`.menu-bar-item`).click(function () {
         $(`.selected-menu.selected-menu`).removeClass("selected-menu")
         $(this).addClass('selected-menu')
         console.log("clicked")
     })
 
-    console.log(ans)
+
+    $(`.options-item`).click(() => {
+     
+        console.log($(`.cell-select`).attr("id"));
+    })
+
+
+    
+
+
+    console.log(cellProp)
 })
